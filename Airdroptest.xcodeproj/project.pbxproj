@@ -14,6 +14,7 @@
 		FF312FC61BB081FD00DAD014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF312FC41BB081FD00DAD014 /* LaunchScreen.storyboard */; };
 		FF312FD11BB081FD00DAD014 /* AirdroptestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF312FD01BB081FD00DAD014 /* AirdroptestTests.swift */; };
 		FF312FDC1BB081FD00DAD014 /* AirdroptestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF312FDB1BB081FD00DAD014 /* AirdroptestUITests.swift */; };
+		FFC28ADB1C036A0C000442E0 /* Testfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = FFC28ADA1C036A0C000442E0 /* Testfile.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FF312FD71BB081FD00DAD014 /* AirdroptestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirdroptestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF312FDB1BB081FD00DAD014 /* AirdroptestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirdroptestUITests.swift; sourceTree = "<group>"; };
 		FF312FDD1BB081FD00DAD014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC28ADA1C036A0C000442E0 /* Testfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Testfile.txt; path = ../../../Documents/Testfile.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				FF312FBB1BB081FD00DAD014 /* AppDelegate.swift */,
 				FF312FBD1BB081FD00DAD014 /* ViewController.swift */,
 				FF312FBF1BB081FD00DAD014 /* Main.storyboard */,
+				FFC28ADA1C036A0C000442E0 /* Testfile.txt */,
 				FF312FC21BB081FD00DAD014 /* Assets.xcassets */,
 				FF312FC41BB081FD00DAD014 /* LaunchScreen.storyboard */,
 				FF312FC71BB081FD00DAD014 /* Info.plist */,
@@ -233,6 +236,7 @@
 			files = (
 				FF312FC61BB081FD00DAD014 /* LaunchScreen.storyboard in Resources */,
 				FF312FC31BB081FD00DAD014 /* Assets.xcassets in Resources */,
+				FFC28ADB1C036A0C000442E0 /* Testfile.txt in Resources */,
 				FF312FC11BB081FD00DAD014 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +490,7 @@
 				FF312FE21BB081FD00DAD014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF312FE31BB081FD00DAD014 /* Build configuration list for PBXNativeTarget "AirdroptestTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				FF312FE51BB081FD00DAD014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF312FE61BB081FD00DAD014 /* Build configuration list for PBXNativeTarget "AirdroptestUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				FF312FE81BB081FD00DAD014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
