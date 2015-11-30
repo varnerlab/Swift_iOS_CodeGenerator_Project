@@ -50,6 +50,19 @@ class ViewController: UIViewController, UITextFieldDelegate  {
         }
     }
     
+    func file() {
+        let documentDirectoryURL = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: true)
+        
+        let fileDestinationUrl = documentDirectoryURL.URLByAppendingPathComponent("Inbox/sample.txt")
+        do {
+            let contentsOfFile = try NSString(contentsOfFile: fileDestinationUrl.path!, encoding: NSUTF8StringEncoding)
+            print("Content of file = \(contentsOfFile)")
+        } catch let error as NSError {
+            print(error)
+            print("No file found")
+        }
+    }
+    
     @IBOutlet var filename: UITextField!
     
     @IBOutlet var filetext: UITextField!
@@ -83,7 +96,8 @@ class ViewController: UIViewController, UITextFieldDelegate  {
     }
     
     @IBAction func Checkfiledirectory(sender: AnyObject) {
-        files()
+        //files()
+        file()
     }
 
     

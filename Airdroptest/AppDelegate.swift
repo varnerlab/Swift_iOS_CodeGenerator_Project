@@ -13,6 +13,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        /*do {
+            let contentsOfFile = try NSString(contentsOfFile: url.path!, encoding: NSUTF8StringEncoding)
+            print("Content of file = \(contentsOfFile)")
+        } catch let error as NSError {
+            print(error)
+            print("No file found")
+        }*/
+        return true
+    }
+
+
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
