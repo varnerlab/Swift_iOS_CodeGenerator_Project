@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITextFieldDelegate  {
         self.filename.delegate = self;
         self.filetext.delegate = self;
         self.fileextension.delegate = self;
+        
+        self.text.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -38,7 +40,20 @@ class ViewController: UIViewController, UITextFieldDelegate  {
         }
     }
     
-    func files() {
+    func inboxfilecontent() {
+        let documentDirectoryURL = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: true)
+        
+        let fileDestinationUrl = documentDirectoryURL.URLByAppendingPathComponent("Inbox/Other file.txt")
+        do {
+            let contentsOfFile = try NSString(contentsOfFile: fileDestinationUrl.path!, encoding: NSUTF8StringEncoding)
+            print("Content of file = \(contentsOfFile)")
+        } catch let error as NSError {
+            print(error)
+            print("No file found")
+        }
+    }
+    
+    func filesinDocs() {
         let documentsURL = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: true)
         
         do {
@@ -50,24 +65,27 @@ class ViewController: UIViewController, UITextFieldDelegate  {
         }
     }
     
-    func file() {
+    func filesinInbox() {
         let documentDirectoryURL = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: true)
         
-        let fileDestinationUrl = documentDirectoryURL.URLByAppendingPathComponent("Inbox/sample.txt")
+        let fileDestinationUrl = documentDirectoryURL.URLByAppendingPathComponent("Inbox")
         do {
-            let contentsOfFile = try NSString(contentsOfFile: fileDestinationUrl.path!, encoding: NSUTF8StringEncoding)
-            print("Content of file = \(contentsOfFile)")
+        let directoryContents = try NSFileManager.defaultManager().contentsOfDirectoryAtURL(fileDestinationUrl.absoluteURL, includingPropertiesForKeys: nil, options: NSDirectoryEnumerationOptions())
+        print(directoryContents)
+        
         } catch let error as NSError {
-            print(error)
-            print("No file found")
+        print(error.localizedDescription)
         }
     }
+
     
     @IBOutlet var filename: UITextField!
     
     @IBOutlet var filetext: UITextField!
     
     @IBOutlet var fileextension: UITextField!
+    
+    @IBOutlet var text: UITextField!
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)
@@ -95,11 +113,15 @@ class ViewController: UIViewController, UITextFieldDelegate  {
         }
     }
     
-    @IBAction func Checkfiledirectory(sender: AnyObject) {
-        //files()
-        file()
+    @IBAction func Checkfilecontent(sender: AnyObject) {
+        inboxfilecontent()
     }
-
+    
+    @IBAction func listoffiles(sender: AnyObject) {
+        filesinDocs()
+        filesinInbox()
+    }
+    
     
     @IBAction func shareFile(sender: AnyObject) {
         
@@ -119,6 +141,30 @@ class ViewController: UIViewController, UITextFieldDelegate  {
             let v = sender as! UIView
             pop.sourceView = v
             pop.sourceRect = v.bounds
+        }
+    }
+
+    
+    @IBAction func modifyfile(sender: AnyObject) {
+        write("sample.txt")
+    }
+    
+    func write(filepath: String) {
+        let text = self.text.text!
+        let fileManager = NSFileManager.defaultManager()
+        let directoryURL = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+        let fileDestinationUrl = directoryURL.URLByAppendingPathComponent("\(filepath)")
+        print(fileDestinationUrl)
+        
+        do {
+            try text.writeToFile(fileDestinationUrl.path!, atomically: true, encoding: NSUTF8StringEncoding)
+            
+            let contentsOfFile = try! NSString(contentsOfURL: fileDestinationUrl, encoding: NSUTF8StringEncoding)
+            print("Content of file = \(contentsOfFile)")
+            
+        } catch let error as NSError {
+            print(error)
+            print("No file found")
         }
     }
 
