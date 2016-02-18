@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF312FBC1BB081FD00DAD014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF312FBB1BB081FD00DAD014 /* AppDelegate.swift */; };
+		FF312FBE1BB081FD00DAD014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF312FBD1BB081FD00DAD014 /* ViewController.swift */; };
+		FF312FC11BB081FD00DAD014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF312FBF1BB081FD00DAD014 /* Main.storyboard */; };
+		FF312FC31BB081FD00DAD014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF312FC21BB081FD00DAD014 /* Assets.xcassets */; };
+		FF312FC61BB081FD00DAD014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF312FC41BB081FD00DAD014 /* LaunchScreen.storyboard */; };
+		FF312FD11BB081FD00DAD014 /* AirdroptestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF312FD01BB081FD00DAD014 /* AirdroptestTests.swift */; };
+		FF312FDC1BB081FD00DAD014 /* AirdroptestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF312FDB1BB081FD00DAD014 /* AirdroptestUITests.swift */; };
+		FFC28ADB1C036A0C000442E0 /* Testfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = FFC28ADA1C036A0C000442E0 /* Testfile.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF312FCD1BB081FD00DAD014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF312FB01BB081FD00DAD014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF312FB71BB081FD00DAD014;
+			remoteInfo = Airdroptest;
+		};
+		FF312FD81BB081FD00DAD014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF312FB01BB081FD00DAD014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF312FB71BB081FD00DAD014;
+			remoteInfo = Airdroptest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF312FB81BB081FD00DAD014 /* Airdroptest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airdroptest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF312FBB1BB081FD00DAD014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF312FBD1BB081FD00DAD014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF312FC01BB081FD00DAD014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF312FC21BB081FD00DAD014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF312FC51BB081FD00DAD014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF312FC71BB081FD00DAD014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF312FCC1BB081FD00DAD014 /* AirdroptestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirdroptestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF312FD01BB081FD00DAD014 /* AirdroptestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirdroptestTests.swift; sourceTree = "<group>"; };
+		FF312FD21BB081FD00DAD014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF312FD71BB081FD00DAD014 /* AirdroptestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirdroptestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF312FDB1BB081FD00DAD014 /* AirdroptestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirdroptestUITests.swift; sourceTree = "<group>"; };
+		FF312FDD1BB081FD00DAD014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC28ADA1C036A0C000442E0 /* Testfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Testfile.txt; path = ../../../Documents/Testfile.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF312FB51BB081FD00DAD014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF312FC91BB081FD00DAD014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF312FD41BB081FD00DAD014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF312FAF1BB081FD00DAD014 = {
+			isa = PBXGroup;
+			children = (
+				FF312FBA1BB081FD00DAD014 /* Airdroptest */,
+				FF312FCF1BB081FD00DAD014 /* AirdroptestTests */,
+				FF312FDA1BB081FD00DAD014 /* AirdroptestUITests */,
+				FF312FB91BB081FD00DAD014 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF312FB91BB081FD00DAD014 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF312FB81BB081FD00DAD014 /* Airdroptest.app */,
+				FF312FCC1BB081FD00DAD014 /* AirdroptestTests.xctest */,
+				FF312FD71BB081FD00DAD014 /* AirdroptestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF312FBA1BB081FD00DAD014 /* Airdroptest */ = {
+			isa = PBXGroup;
+			children = (
+				FF312FBB1BB081FD00DAD014 /* AppDelegate.swift */,
+				FF312FBD1BB081FD00DAD014 /* ViewController.swift */,
+				FF312FBF1BB081FD00DAD014 /* Main.storyboard */,
+				FFC28ADA1C036A0C000442E0 /* Testfile.txt */,
+				FF312FC21BB081FD00DAD014 /* Assets.xcassets */,
+				FF312FC41BB081FD00DAD014 /* LaunchScreen.storyboard */,
+				FF312FC71BB081FD00DAD014 /* Info.plist */,
+			);
+			path = Airdroptest;
+			sourceTree = "<group>";
+		};
+		FF312FCF1BB081FD00DAD014 /* AirdroptestTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF312FD01BB081FD00DAD014 /* AirdroptestTests.swift */,
+				FF312FD21BB081FD00DAD014 /* Info.plist */,
+			);
+			path = AirdroptestTests;
+			sourceTree = "<group>";
+		};
+		FF312FDA1BB081FD00DAD014 /* AirdroptestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF312FDB1BB081FD00DAD014 /* AirdroptestUITests.swift */,
+				FF312FDD1BB081FD00DAD014 /* Info.plist */,
+			);
+			path = AirdroptestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF312FB71BB081FD00DAD014 /* Airdroptest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF312FE01BB081FD00DAD014 /* Build configuration list for PBXNativeTarget "Airdroptest" */;
+			buildPhases = (
+				FF312FB41BB081FD00DAD014 /* Sources */,
+				FF312FB51BB081FD00DAD014 /* Frameworks */,
+				FF312FB61BB081FD00DAD014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Airdroptest;
+			productName = Airdroptest;
+			productReference = FF312FB81BB081FD00DAD014 /* Airdroptest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF312FCB1BB081FD00DAD014 /* AirdroptestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF312FE31BB081FD00DAD014 /* Build configuration list for PBXNativeTarget "AirdroptestTests" */;
+			buildPhases = (
+				FF312FC81BB081FD00DAD014 /* Sources */,
+				FF312FC91BB081FD00DAD014 /* Frameworks */,
+				FF312FCA1BB081FD00DAD014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF312FCE1BB081FD00DAD014 /* PBXTargetDependency */,
+			);
+			name = AirdroptestTests;
+			productName = AirdroptestTests;
+			productReference = FF312FCC1BB081FD00DAD014 /* AirdroptestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF312FD61BB081FD00DAD014 /* AirdroptestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF312FE61BB081FD00DAD014 /* Build configuration list for PBXNativeTarget "AirdroptestUITests" */;
+			buildPhases = (
+				FF312FD31BB081FD00DAD014 /* Sources */,
+				FF312FD41BB081FD00DAD014 /* Frameworks */,
+				FF312FD51BB081FD00DAD014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF312FD91BB081FD00DAD014 /* PBXTargetDependency */,
+			);
+			name = AirdroptestUITests;
+			productName = AirdroptestUITests;
+			productReference = FF312FD71BB081FD00DAD014 /* AirdroptestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF312FB01BB081FD00DAD014 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Rohaine Hsu";
+				TargetAttributes = {
+					FF312FB71BB081FD00DAD014 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = F5DC67J8SL;
+					};
+					FF312FCB1BB081FD00DAD014 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = F5DC67J8SL;
+						TestTargetID = FF312FB71BB081FD00DAD014;
+					};
+					FF312FD61BB081FD00DAD014 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = F5DC67J8SL;
+						TestTargetID = FF312FB71BB081FD00DAD014;
+					};
+				};
+			};
+			buildConfigurationList = FF312FB31BB081FD00DAD014 /* Build configuration list for PBXProject "Airdroptest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF312FAF1BB081FD00DAD014;
+			productRefGroup = FF312FB91BB081FD00DAD014 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF312FB71BB081FD00DAD014 /* Airdroptest */,
+				FF312FCB1BB081FD00DAD014 /* AirdroptestTests */,
+				FF312FD61BB081FD00DAD014 /* AirdroptestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF312FB61BB081FD00DAD014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF312FC61BB081FD00DAD014 /* LaunchScreen.storyboard in Resources */,
+				FF312FC31BB081FD00DAD014 /* Assets.xcassets in Resources */,
+				FFC28ADB1C036A0C000442E0 /* Testfile.txt in Resources */,
+				FF312FC11BB081FD00DAD014 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF312FCA1BB081FD00DAD014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF312FD51BB081FD00DAD014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF312FB41BB081FD00DAD014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF312FBE1BB081FD00DAD014 /* ViewController.swift in Sources */,
+				FF312FBC1BB081FD00DAD014 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF312FC81BB081FD00DAD014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF312FD11BB081FD00DAD014 /* AirdroptestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF312FD31BB081FD00DAD014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF312FDC1BB081FD00DAD014 /* AirdroptestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF312FCE1BB081FD00DAD014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF312FB71BB081FD00DAD014 /* Airdroptest */;
+			targetProxy = FF312FCD1BB081FD00DAD014 /* PBXContainerItemProxy */;
+		};
+		FF312FD91BB081FD00DAD014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF312FB71BB081FD00DAD014 /* Airdroptest */;
+			targetProxy = FF312FD81BB081FD00DAD014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF312FBF1BB081FD00DAD014 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF312FC01BB081FD00DAD014 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF312FC41BB081FD00DAD014 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF312FC51BB081FD00DAD014 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF312FDE1BB081FD00DAD014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FF312FDF1BB081FD00DAD014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF312FE11BB081FD00DAD014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Airdroptest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Airdroptest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF312FE21BB081FD00DAD014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Airdroptest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Airdroptest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF312FE41BB081FD00DAD014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AirdroptestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AirdroptestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airdroptest.app/Airdroptest";
+			};
+			name = Debug;
+		};
+		FF312FE51BB081FD00DAD014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AirdroptestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AirdroptestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airdroptest.app/Airdroptest";
+			};
+			name = Release;
+		};
+		FF312FE71BB081FD00DAD014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AirdroptestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AirdroptestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Airdroptest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FF312FE81BB081FD00DAD014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AirdroptestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AirdroptestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Airdroptest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF312FB31BB081FD00DAD014 /* Build configuration list for PBXProject "Airdroptest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF312FDE1BB081FD00DAD014 /* Debug */,
+				FF312FDF1BB081FD00DAD014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF312FE01BB081FD00DAD014 /* Build configuration list for PBXNativeTarget "Airdroptest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF312FE11BB081FD00DAD014 /* Debug */,
+				FF312FE21BB081FD00DAD014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF312FE31BB081FD00DAD014 /* Build configuration list for PBXNativeTarget "AirdroptestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF312FE41BB081FD00DAD014 /* Debug */,
+				FF312FE51BB081FD00DAD014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF312FE61BB081FD00DAD014 /* Build configuration list for PBXNativeTarget "AirdroptestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF312FE71BB081FD00DAD014 /* Debug */,
+				FF312FE81BB081FD00DAD014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF312FB01BB081FD00DAD014 /* Project object */;
+}
